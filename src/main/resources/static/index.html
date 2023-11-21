@@ -5,6 +5,7 @@
     <title>이영률님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
     <link href="./index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef8598f841.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
     <div class="background">
@@ -63,9 +64,14 @@
                         </div>
                     </div>
                     <div class="wrapper__right__body">
-<!--                        <iframe src="home.html"></iframe>-->
-                        <iframe src="jukebox.html"></iframe>
+                        <iframe id="contentFrame" src="home.html"></iframe>
                     </div>
+                </div>
+                <!-- 메뉴 만들기 -->
+                <div class="navigation">
+                    <div class="navigation_item" id="menuHome" onclick="menuHome()">홈</div>
+                    <div class="navigation_item" id="menuJukebox" onclick="menuJukebox()">쥬크박스</div>
+                    <div class="navigation_item" id="menuGame" onclick="menuGame()">게임</div>
                 </div>
                 </div>
         </div>
